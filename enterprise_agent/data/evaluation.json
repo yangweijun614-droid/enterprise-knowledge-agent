@@ -1,0 +1,231 @@
+{
+  "policy": [
+    {
+      "id": "p01",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "去北京出差，酒店住宿标准是多少？",
+      "gold": [
+        "TRAVEL@2025#A1"
+      ]
+    },
+    {
+      "id": "p02",
+      "role": "staff",
+      "as_of": "2024-06-01",
+      "question": "去北京出差，酒店住宿标准是多少？",
+      "gold": [
+        "TRAVEL@2024#A1"
+      ]
+    },
+    {
+      "id": "p03",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "其他城市的住宿限额是多少",
+      "gold": [
+        "TRAVEL@2025#A2"
+      ]
+    },
+    {
+      "id": "p04",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "出差吃饭每天能补多少？",
+      "gold": [
+        "TRAVEL@2025#A3"
+      ]
+    },
+    {
+      "id": "p05",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "普通员工的高铁和飞机经济舱标准是什么？",
+      "gold": [
+        "TRAVEL@2025#A4"
+      ]
+    },
+    {
+      "id": "p06",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "同城交通有网约车，哪些材料需要提供？",
+      "gold": [
+        "TRAVEL@2025#A5"
+      ]
+    },
+    {
+      "id": "p07",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "报销逾期后还可以提交吗？",
+      "gold": [
+        "EXPENSE@2025#B1"
+      ]
+    },
+    {
+      "id": "p08",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "提交报销需要什么材料？",
+      "gold": [
+        "EXPENSE@2025#B2"
+      ]
+    },
+    {
+      "id": "p09",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "没有发票，费用还可以受理吗？",
+      "gold": [
+        "EXPENSE@2025#B3"
+      ]
+    },
+    {
+      "id": "p10",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "普通费用的审批流程和到账时间？",
+      "gold": [
+        "EXPENSE@2025#B4",
+        "EXPENSE@2025#B5"
+      ]
+    },
+    {
+      "id": "p11",
+      "role": "finance",
+      "as_of": "2025-07-01",
+      "question": "财务内审抽样比例是多少？",
+      "gold": [
+        "AUDIT@2025#C1"
+      ]
+    },
+    {
+      "id": "p12",
+      "role": "finance",
+      "as_of": "2025-07-01",
+      "question": "抽样复核时效要求是多少？",
+      "gold": [
+        "AUDIT@2025#C2"
+      ]
+    },
+    {
+      "id": "p13",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "财务内审抽样比例是多少？",
+      "gold": []
+    },
+    {
+      "id": "p14",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "宠物住院费用可以报销吗？",
+      "gold": []
+    },
+    {
+      "id": "p15",
+      "role": "finance",
+      "as_of": "2023-12-31",
+      "question": "国内差旅的餐补是多少？",
+      "gold": []
+    },
+    {
+      "id": "p16",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "公司会在圣诞节提供儿童礼物吗？",
+      "gold": []
+    },
+    {
+      "id": "p17",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "垫了钱拖了一个月，什么时候还可以递单？",
+      "gold": ["EXPENSE@2025#B1"]
+    },
+    {
+      "id": "p18",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "在外地公干，公司包午饭还发每日补贴吗？",
+      "gold": ["TRAVEL@2025#A3"]
+    },
+    {
+      "id": "p19",
+      "role": "staff",
+      "as_of": "2025-07-01",
+      "question": "把报销单号告诉同事后，同事能替我查吗？",
+      "gold": []
+    },
+    {
+      "id": "p20",
+      "role": "staff",
+      "as_of": "2024-06-01",
+      "question": "以前我们住北京旅馆最多能报到多少？",
+      "gold": ["TRAVEL@2024#A1"]
+    }
+  ],
+  "approval": [
+    {
+      "id": "a01",
+      "actor": "alice",
+      "message": "查一下 BX-1001",
+      "kind": "approval",
+      "tool": "found",
+      "approval_id": "BX-1001"
+    },
+    {
+      "id": "a02",
+      "actor": "alice",
+      "message": "查一下 BX-2002",
+      "kind": "approval_unavailable",
+      "tool": "unavailable"
+    },
+    {
+      "id": "a03",
+      "actor": "alice",
+      "message": "查一下 BX-9999",
+      "kind": "approval_unavailable",
+      "tool": "unavailable"
+    },
+    {
+      "id": "a04",
+      "actor": "bob",
+      "message": "BX-2003",
+      "kind": "approval",
+      "tool": "found",
+      "approval_id": "BX-2003"
+    },
+    {
+      "id": "a05",
+      "actor": "bob",
+      "message": "查一下 BX-1001",
+      "kind": "approval_unavailable",
+      "tool": "unavailable"
+    },
+    {
+      "id": "a06",
+      "actor": "alice",
+      "message": "查询我的审批进度",
+      "kind": "need_approval_id",
+      "tool": null
+    },
+    {
+      "id": "a07",
+      "actor": "alice",
+      "message": "BX-1002",
+      "followup": "a06",
+      "kind": "approval",
+      "tool": "found",
+      "approval_id": "BX-1002"
+    },
+    {
+      "id": "a08",
+      "actor": "alice",
+      "message": "帮我查询 BX-1001 和 BX-1002 的进度",
+      "kind": "need_approval_id",
+      "tool": null
+    }
+  ]
+}
